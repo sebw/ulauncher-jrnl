@@ -83,7 +83,7 @@ class ItemEnterEventListener(EventListener):
 
         print(data)
 
-        out = subprocess.Popen(['jrnl', data],
+        out = subprocess.Popen([setting_path, data],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT)
 
