@@ -1,0 +1,25 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "jrnl.sh",
+  "description": "Add entries to your jrnl (https://jrnl.sh/)",
+  "developer_name": "Sebastien Wains",
+  "icon": "images/jrnl_white.svg",
+  "options": {
+    "query_debounce": 1
+  },
+  "preferences": [
+    {
+      "id": "demo_kw",
+      "type": "keyword",
+      "name": "jrnl",
+      "default_value": "j"
+    },
+    {
+      "id": "setting_limit",
+      "type": "text",
+      "name": "Limit",
+      "description": "Number of entries to show",
+      "default_value": "10"
+    }
+  ]
+}
