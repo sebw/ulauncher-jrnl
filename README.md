@@ -6,7 +6,7 @@ Check your last jrnl.sh entries and add new entries.
 
 Ulauncher: [https://ulauncher.io](https://ulauncher.io)
 
-jrnl: [jrnl.sh](htps://jrnl.sh)
+jrnl: [jrnl.sh](https://jrnl.sh)
 
 ## Demo
 

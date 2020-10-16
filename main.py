@@ -29,9 +29,10 @@ class KeywordQueryEventListener(EventListener):
 
         logger.info('preferences %s' % json.dumps(extension.preferences))
 
+        setting_path = extension.preferences['setting_path']
         setting_limit = extension.preferences['setting_limit']
 
-        out = subprocess.Popen(['jrnl', '--export', 'json', '-n', setting_limit],
+        out = subprocess.Popen([setting_path , '--export', 'json', '-n', setting_limit],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT)
 
