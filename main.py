@@ -28,7 +28,6 @@ class KeywordQueryEventListener(EventListener):
         items = []
 
         logger.info('preferences %s' % json.dumps(extension.preferences))
-
         setting_path = extension.preferences['setting_path']
         setting_limit = extension.preferences['setting_limit']
 
@@ -79,9 +78,11 @@ class ItemEnterEventListener(EventListener):
 
         items = []
 
-        data = event.get_data()
+        logger.info('preferences %s' % json.dumps(extension.preferences))
+        setting_path = extension.preferences['setting_path']
+        setting_limit = extension.preferences['setting_limit']
 
-        print(data)
+        data = event.get_data()
 
         out = subprocess.Popen([setting_path, data],
             stdout=subprocess.PIPE,
