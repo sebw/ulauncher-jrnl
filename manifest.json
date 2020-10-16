@@ -20,7 +20,7 @@
       "name": "Limit",
       "description": "Location of the jrnl binary",
       "default_value": "/home/USER/.local/bin/jrnl"
-    }
+    },
     {
       "id": "setting_limit",
       "type": "text",
