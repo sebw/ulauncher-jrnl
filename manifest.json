@@ -5,7 +5,7 @@
   "developer_name": "Sebastien Wains",
   "icon": "images/jrnl_white.svg",
   "options": {
-    "query_debounce": 1
+    "query_debounce": 0.1
   },
   "preferences": [
     {
