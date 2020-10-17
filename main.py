@@ -95,12 +95,14 @@ class ItemEnterEventListener(EventListener):
         if rc == 0:
             items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
                                                             name="Added %s to your journal" % data,
+                                                            description='Press enter to exit',
                                                             highlightable=False,
                                                             on_enter=HideWindowAction()))
             return RenderResultListAction(items)
         else:
             items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
-                                                            name="Error",
+                                                            name="An error occurred",
+                                                            description='Press enter to exit',
                                                             highlightable=False,
                                                             on_enter=HideWindowAction()))
         return RenderResultListAction(items)

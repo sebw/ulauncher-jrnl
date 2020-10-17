@@ -18,14 +18,14 @@
       "id": "setting_path",
       "type": "text",
       "name": "Limit",
-      "description": "Location of the jrnl binary",
-      "default_value": "/home/USER/.local/bin/jrnl"
+      "description": "Location of the jrnl binary (examples: /home/yourusername/.local/bin/jrnl, /usr/local/bin/jrnl)",
+      "default_value": "/home/change/the/path/.local/bin/jrnl"
     },
     {
       "id": "setting_limit",
       "type": "text",
       "name": "Limit",
-      "description": "Number of entries to show",
+      "description": "Number of latest entries to show",
       "default_value": "10"
     }
   ]
