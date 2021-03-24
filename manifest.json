@@ -3,7 +3,7 @@
   "name": "jrnl.sh",
   "description": "Add entries to your jrnl (https://jrnl.sh/)",
   "developer_name": "Sebastien Wains",
-  "icon": "images/jrnl_white.svg",
+  "icon": "images/logo.png",
   "options": {
     "query_debounce": 0.1
   },
