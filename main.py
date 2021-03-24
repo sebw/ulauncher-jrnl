@@ -48,7 +48,7 @@ class KeywordQueryEventListener(EventListener):
 
 
 
-            items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
+            items.append(ExtensionResultItem(icon='images/logo.png',
                                             name="Press enter to add: %s" % (query),
                                             highlightable=False,
                                             on_enter=ExtensionCustomAction(query, keep_app_open=True)))
@@ -62,7 +62,7 @@ class KeywordQueryEventListener(EventListener):
                 item_date = i['date']
                 item_starred = i['starred']
 
-                items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
+                items.append(ExtensionResultItem(icon='images/logo.png',
                                                  name='%s' % item_title,
                                                  description='%s\n%s\nStarred: %s' % (item_body, item_date, item_starred),
                                                  highlightable=False,
@@ -93,14 +93,14 @@ class ItemEnterEventListener(EventListener):
         rc = out.returncode
 
         if rc == 0:
-            items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
+            items.append(ExtensionResultItem(icon='images/logo.png',
                                                             name="Added %s to your journal" % data,
                                                             description='Press enter to exit',
                                                             highlightable=False,
                                                             on_enter=HideWindowAction()))
             return RenderResultListAction(items)
         else:
-            items.append(ExtensionResultItem(icon='images/jrnl_white.svg',
+            items.append(ExtensionResultItem(icon='images/logo.png',
                                                             name="An error occurred",
                                                             description='Press enter to exit',
                                                             highlightable=False,
